@@ -1,13 +1,23 @@
-yes
-document
-document.getElementsById("#title")
-document.getElementsByClassName("button")
-document.getElementsByTagName("a")
-document.querySelectorAll(".home h1:first-child")
-document.querySelector(".home h1:first-child")
-yes
-yes
-no
-no
-className replaces all classes, classList doesn't
-className replaces all classes, classList doesn't
+1. yes
+2. document
+3. document.getElementById("#title")
+4. document.getElementsByClassName("button")
+5. document.getElementsByTagName("a")
+6. document.querySelectorAll(".home h1:first-child")
+7. document.querySelector(".home h1:first-child")
+8. yes
+
+### **QUESTION 9 OF 13**
+Will this work? `btn.addEventListener(“click”, handler())`
+9. No.
+
+### **QUESTION 10 OF 13**
+Will this work? `btn.addEventListener(“click”, handler)`
+10. Yes.
+
+11. no
+12. className replaces all classes, classList doesn't
+
+### **QUESTION 13 OF 13**
+What does `classList.toggle` do?
+13. It adds a class if it does not exist and removes a class that exists.
