@@ -1,0 +1,13 @@
+yes
+document
+document.getElementsById("#title")
+document.getElementsByClassName("button")
+document.getElementsByTagName("a")
+document.querySelectorAll(".home h1:first-child")
+document.querySelector(".home h1:first-child")
+yes
+yes
+no
+no
+className replaces all classes, classList doesn't
+className replaces all classes, classList doesn't
