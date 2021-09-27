@@ -2,17 +2,17 @@
 
 display:inline-block
 
-2. What should I do to move a group of boxes using flexbox?
+*2. What should I do to move a group of boxes using flexbox?
 
-I should add 'display:flex' to all boxes.
+I should put them inside of a "flex container"
 
 3. What CSS property do I use to make a flex container?
 
 display:flex
 
-4. When we are using flexbox who do we talk to?
+*4. When we are using flexbox who do we talk to?
 
-The flex children
+The flex container
 
 5. What's the default direction of a flex container?
 
