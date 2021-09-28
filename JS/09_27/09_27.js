@@ -2,14 +2,14 @@ const form = document.querySelector('#form');
 const selectNum = document.querySelector('#select-num');
 const guessNum = document.querySelector('#guess-num');
 const matchNum = document.querySelector('#match');
-const Allresult = document.querySelector('#result');
 
 const HIDDEN_CLASSNAME = "hidden";
 const NUMBER_KEY = "number";
 
 function finalResult() {
-  const final = document.querySelector("result_span");
+  const final = document.querySelector("#result_span");
   const randomPick = Math.floor(Math.random() * selectNum.value);
+  console.log(randomPick < Number(guessNum.value));
   if (randomPick < Number(guessNum.value)) {
     final.innerHTML = 'You Won'
   } else if (randomPick > Number(guessNum.value)) {
@@ -31,14 +31,14 @@ function onFormSubmit(event) {
     const _guessNum = guessNum.value;
     localStorage.setItem(NUMBER_KEY, _guessNum);
     onResultSubmit(_guessNum);
+    finalResult();
   }
 }
-
 
 function onResultSubmit(_guessNum) {
   matchNum.innerHTML = `You chose: ${_guessNum}, the machine chose: ${Math.floor(Math.random() * selectNum.value)}`;
   matchNum.classList.remove(HIDDEN_CLASSNAME);
-  finalResult();
+  
 }
 
 // bnt를 눌러도, 데이터가 날아가지 않고 localStorage에 저장됨.
