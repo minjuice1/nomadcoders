@@ -6,7 +6,7 @@ function getClock() {
   const gap = dday.getTime() - today.getTime();
 
   const result_day = Math.floor(gap / (1000 * 60 * 60 * 24));
-  const result_hours = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const result_hours = Math.floor((gap % (1000 * 60 * 60) / (1000 * 60 * 60 * 24)));
   const result_min = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
   const result_sec = Math.floor((gap / 1000) % 60);
 

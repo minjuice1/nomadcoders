@@ -38,7 +38,6 @@ function onFormSubmit(event) {
 function onResultSubmit(_guessNum) {
   matchNum.innerHTML = `You chose: ${_guessNum}, the machine chose: ${Math.floor(Math.random() * selectNum.value)}`;
   matchNum.classList.remove(HIDDEN_CLASSNAME);
-  
 }
 
 // bnt를 눌러도, 데이터가 날아가지 않고 localStorage에 저장됨.
@@ -51,5 +50,3 @@ if(savedNumber === null) {
   //show the number
   onResultSubmit(savedNumber);
 }
-
-
