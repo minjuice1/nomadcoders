@@ -44,6 +44,6 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
   let onePick = colors[Math.floor(Math.random() * colors.length)];
   let secPick = colors[Math.floor(Math.random() * colors.length)];
-  body.style.background = `linear-gradient(${onePick}, ${secPick})`;
+  document.body.style.background = `linear-gradient(${onePick}, ${secPick})`;
   
 });
