@@ -1,0 +1,97 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+
+.title {
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+
+.grid {
+	display: grid;
+	font-weight: bold;
+	grid-template-rows: repeat(2, minmax(max-content, 30vh));
+	grid-template-columns: repeat(auto-fill, minmax(max-content, 16vw));
+}
+
+.item {
+	display: grid;
+	text-align: center;
+	align-content: space-between;
+	padding: 10px;
+	/* display: grid;
+	color: black;
+	place-items: center center;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-align: center;
+	align-content: space-between;
+	padding: 10px;
+	background-size: cover;
+	position: center;
+	background-position: center; */
+}
+
+.grid > div > div:nth-child(1) {
+	font-size: 1rem;
+}
+
+.grid > div > div:nth-child(2) {
+	font-size: 12px;
+}
+
+.grid > div:nth-child(1) {
+	background-color: #f0e5cf;
+}
+
+.grid > div:nth-child(2) {
+	background-color: #f7f6f2;
+	background-image: url("https://i.pinimg.com/564x/77/7f/e7/777fe7e160b52dc60ac1faf65a0ea13e.jpg");
+}
+
+.grid > div:nth-child(3) {
+	background-color: #c8c6c6;
+}
+
+.grid > div:nth-child(4) {
+	background-color: #4b6587;
+	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+}
+
+.grid > div:nth-child(5) {
+	background-color: #ffe194;
+}
+
+.grid > div:nth-child(6) {
+	background-color: #e8f6ef;
+}
+
+.grid > div:nth-child(7) {
+	background-color: #b8dfd8;
+}
+
+.grid > div:nth-child(8) {
+	background-color: #4c4c6d;
+	background-image: url("https://i.pinimg.com/564x/90/b9/4f/90b94f12f19798db3ddcf97cbe6f2c47.jpg");
+}
+
+.grid > div:nth-child(9) {
+	background-color: #fff5eb;
+}
+
+.grid > div:nth-child(10) {
+	background-color: #deedf0;
+}
+
+.grid > div:nth-child(11) {
+	background-color: #f4c7ab;
+	background-image: url("https://i.pinimg.com/564x/d1/7b/5d/d17b5dd626e92cca56da7646f94fa523.jpg");
+}
+
+.grid > div:nth-child(12) {
+	background-color: #b2b8a3;
+}
