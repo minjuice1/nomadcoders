@@ -15,7 +15,7 @@ body {
 	display: grid;
 	font-weight: bold;
 	grid-template-rows: repeat(2, minmax(max-content, 30vh));
-	grid-template-columns: repeat(auto-fill, minmax(max-content, 16vw));
+	grid-template-columns: repeat(auto-fit, minmax(max-content, 16vw));
 }
 
 .item {
@@ -23,25 +23,14 @@ body {
 	text-align: center;
 	align-content: space-between;
 	padding: 10px;
-	/* display: grid;
-	color: black;
-	place-items: center center;
-	font-size: 1.1rem;
-	font-weight: bold;
-	text-align: center;
-	align-content: space-between;
-	padding: 10px;
-	background-size: cover;
-	position: center;
-	background-position: center; */
 }
 
 .grid > div > div:nth-child(1) {
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
 .grid > div > div:nth-child(2) {
-	font-size: 12px;
+	font-size: 0.5rem;
 }
 
 .grid > div:nth-child(1) {
@@ -49,7 +38,6 @@ body {
 }
 
 .grid > div:nth-child(2) {
-	background-color: #f7f6f2;
 	background-image: url("https://i.pinimg.com/564x/77/7f/e7/777fe7e160b52dc60ac1faf65a0ea13e.jpg");
 }
 
@@ -58,7 +46,6 @@ body {
 }
 
 .grid > div:nth-child(4) {
-	background-color: #4b6587;
 	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
 }
 
@@ -67,20 +54,19 @@ body {
 }
 
 .grid > div:nth-child(6) {
-	background-color: #e8f6ef;
+	background-image: url("https://i.pinimg.com/564x/f8/7c/c9/f87cc97b4ec971c435c636a264844e1e.jpg");
 }
 
 .grid > div:nth-child(7) {
-	background-color: #b8dfd8;
+	background-image: url("https://i.pinimg.com/236x/e6/84/67/e68467187d60dbdc2cde4edbefe1b792.jpg");
 }
 
 .grid > div:nth-child(8) {
-	background-color: #4c4c6d;
-	background-image: url("https://i.pinimg.com/564x/90/b9/4f/90b94f12f19798db3ddcf97cbe6f2c47.jpg");
+	background-color: #e8f6ef;
 }
 
 .grid > div:nth-child(9) {
-	background-color: #fff5eb;
+	background-image: url("https://i.pinimg.com/564x/90/b9/4f/90b94f12f19798db3ddcf97cbe6f2c47.jpg");
 }
 
 .grid > div:nth-child(10) {
@@ -88,7 +74,6 @@ body {
 }
 
 .grid > div:nth-child(11) {
-	background-color: #f4c7ab;
 	background-image: url("https://i.pinimg.com/564x/d1/7b/5d/d17b5dd626e92cca56da7646f94fa523.jpg");
 }
 
