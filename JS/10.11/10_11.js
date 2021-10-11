@@ -6,7 +6,9 @@ const toDoList = document.getElementById("todo-list");
 function handleToDoSubmit(event) {
   // preventDefault()를 추가하면 새로고침해도 event가 작동하지 않음.
   event.preventDefault();
-  console.log(toDoInput.value);
+  const newTodo = toDoInput.value;
+  toDoInput.value = "";
+  console.log(newTodo, toDoInput.value);
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
