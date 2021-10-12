@@ -16,13 +16,17 @@ function deleteToDo(event) {
   // todo-list에서 어떤 li를 클릭했는지 알고 싶을 때
   // console.log(event.target.parentElement.innerText);
   const li = event.target.parentElement;
+
+  // 클릭해서 remove 하기 전에 id를 얻자.
+  console.log(li.id);
   li.remove();
 }
 
 function paintToDo(newTodo) {
   const li = document.createElement("li");
+  li.id = newTodo.id;
   const span = document.createElement("span");
-  span.innerText = newTodo;
+  span.innerText = newTodo.text;
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteToDo);
@@ -36,10 +40,16 @@ function handleToDoSubmit(event) {
   event.preventDefault();
   const newTodo = toDoInput.value;
   toDoInput.value = "";
+
+  // toDos를 obj형태로 변형하고, id를 줘서 item을 삭제해야 함.
+  const newTodoObj = {
+    text: newTodo,
+    id: Date.now(),
+  };
   // 화면에 그려주기 전에 (paintTodo), toDos 배열에 먼저 push
   // toDos = []; 이라면, 빈 array에 push 되는 것이라서 기존 local에 있던 데이터들이 날아감.
-  toDos.push(newTodo);
-  paintToDo(newTodo);
+  toDos.push(newTodoObj);
+  paintToDo(newTodoObj);
   // 화면에 그려준 후 (paintTodo), localStorage에 toDos 배열을 추가.
   saveToDos();
 }
