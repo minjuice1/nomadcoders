@@ -15,11 +15,11 @@ body {
 	display: grid;
 	font-weight: bold;
 	grid-template-rows: repeat(3, minmax(max-content, 24vh));
-	grid-template-columns: repeat(4, minmax(max-content, 18vw));
+	grid-template-columns: repeat(4, minmax(180px, 10vw));
 }
 
 .grid > div:nth-child(1) {
-	background-color: #f0e5cf;
+	background-color: #dbd0c0;
 	font-size: 1.3rem;
 	text-align: left;
 	padding: 10px;
@@ -27,22 +27,26 @@ body {
 
 .grid > div:nth-child(2) {
 	grid-row: 2/4;
-	background-color: #c8c6c6;
+	background-color: #f3d5c0;
 	text-align: left;
 	padding: 10px;
 }
 
+.item1:nth-child(n) {
+	transform: rotateX(180deg);
+}
+
 .grid > div:nth-child(3) {
-	background-color: #ffc904;
+	background-color: #889eaf;
 }
 
 .grid > div:nth-child(4) {
 	grid-row: 2/3;
-	background-color: #b2b8a3;
+	background-color: #f9cf93;
 }
 
 .grid > div:nth-child(5) {
-	background-color: #ffe194;
+	background-color: #b8dfd8;
 	font-size: 1.1rem;
 	text-align: left;
 	padding: 10px;
@@ -56,7 +60,16 @@ body {
 
 .grid > div:nth-child(7) {
 	grid-row: 1/4;
-	background-color: #e8f6ef;
+	background-color: #6b7aa1;
 	text-align: left;
 	padding: 10px;
+}
+
+#speakers,
+#artists {
+	font-size: 0.8rem;
+	margin-bottom: 10px;
+}
+#highlight {
+	background-color: #9d84b7;
 }
