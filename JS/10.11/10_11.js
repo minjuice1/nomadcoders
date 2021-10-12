@@ -4,7 +4,9 @@ const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
-const toDos = [];
+
+// 새로고침 하게되면, 항상 빈 배열로 시작됨.
+let toDos = [];
 
 function saveToDos () {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
@@ -35,6 +37,7 @@ function handleToDoSubmit(event) {
   const newTodo = toDoInput.value;
   toDoInput.value = "";
   // 화면에 그려주기 전에 (paintTodo), toDos 배열에 먼저 push
+  // toDos = []; 이라면, 빈 array에 push 되는 것이라서 기존 local에 있던 데이터들이 날아감.
   toDos.push(newTodo);
   paintToDo(newTodo);
   // 화면에 그려준 후 (paintTodo), localStorage에 toDos 배열을 추가.
@@ -61,6 +64,8 @@ if(savedToDos) {
   // 위처럼 function을 만들지 않아도 됨(arrow function) shortcut
   // parsedToDos.forEach((item) => console.log("this is the turn of", item));
 
+  // toDos가 빈 배열로 시작하지 않고, 기존 parsedToDos에 있는 값들을 저장하고 싶을 때 (덮어씌우고 싶을 때)
+  toDos = parsedToDos;
   // 각각의 item을 화면에 보여준다.
   parsedToDos.forEach(paintToDo);
 }
