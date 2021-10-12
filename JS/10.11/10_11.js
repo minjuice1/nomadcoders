@@ -43,20 +43,24 @@ function handleToDoSubmit(event) {
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
+// 2. 배열안에 있는 각각의 값들에 대해 function을 적용할 수 있음.
 // item을 넣으면, 해당 item을 구체적으로 보여준다.
-function sayHello(item) {
-  console.log("this is the turn of", item);
-}
+// function sayHello(item) {
+//   console.log("this is the turn of", item);
+// }
 
 // localStorage에 있는 이상한 string 형태의 todos를 일반적인 array형태로 변경.
 const savedToDos = localStorage.getItem(TODOS_KEY);
 // saveToDos이 존재한다면, parse
 if(savedToDos) {
   const parsedToDos = JSON.parse(savedToDos);
-  
-  // 배열안에 있는 각각의 값들에 대해 function을 적용할 수 있음.
-  parsedToDos.forEach(sayHello);
+  // 1. 배열안에 있는 각각의 값들에 대해 function을 적용할 수 있음.
+  // parsedToDos.forEach(sayHello);
 
+  // 2. 배열안에 있는 각각의 값들에 대해 function을 적용할 수 있음.
   // 위처럼 function을 만들지 않아도 됨(arrow function) shortcut
   // parsedToDos.forEach((item) => console.log("this is the turn of", item));
+
+  // 각각의 item을 화면에 보여준다.
+  parsedToDos.forEach(paintToDo);
 }
