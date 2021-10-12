@@ -14,8 +14,8 @@ body {
 .grid {
 	display: grid;
 	font-weight: bold;
-	grid-template-rows: repeat(3, minmax(max-content, 24vh));
-	grid-template-columns: repeat(4, minmax(180px, 10vw));
+	grid-template-rows: repeat(3, minmax(max-content, 15vh));
+	grid-template-columns: repeat(4, minmax(200px, 10vw));
 }
 
 .grid > div:nth-child(1) {
