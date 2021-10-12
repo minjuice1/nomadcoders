@@ -3,10 +3,11 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
 
+const TODOS_KEY = "todos";
 const toDos = [];
 
 function saveToDos () {
-  localStorage.setItem("todos", JSON.stringify(toDos));
+  localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
 function deleteToDo(event) {
@@ -41,3 +42,21 @@ function handleToDoSubmit(event) {
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+
+// item을 넣으면, 해당 item을 구체적으로 보여준다.
+function sayHello(item) {
+  console.log("this is the turn of", item);
+}
+
+// localStorage에 있는 이상한 string 형태의 todos를 일반적인 array형태로 변경.
+const savedToDos = localStorage.getItem(TODOS_KEY);
+// saveToDos이 존재한다면, parse
+if(savedToDos) {
+  const parsedToDos = JSON.parse(savedToDos);
+  
+  // 배열안에 있는 각각의 값들에 대해 function을 적용할 수 있음.
+  parsedToDos.forEach(sayHello);
+
+  // 위처럼 function을 만들지 않아도 됨(arrow function) shortcut
+  // parsedToDos.forEach((item) => console.log("this is the turn of", item));
+}
