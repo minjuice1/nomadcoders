@@ -18,8 +18,15 @@ function deleteToDo(event) {
   const li = event.target.parentElement;
 
   // 클릭해서 remove 하기 전에 id를 얻자.
-  console.log(li.id);
+  // console.log(li.id);
+
+  // toDos = toDos.filter(toDo => toDo.id !== li.id) 를 할 경우,
+  // type이 맞지 않아서, 작동이 안됨. (li.id는 string타입, toDo.id는 number타입)
+  // console.log(typeof li.id); // string
+  
   li.remove();
+  toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
+  saveToDos();
 }
 
 function paintToDo(newTodo) {
