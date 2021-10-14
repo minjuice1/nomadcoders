@@ -42,7 +42,7 @@ select {
 .pic1 {
 	background-image: url("https://images-na.ssl-images-amazon.com/images/I/31MvVY7Z0mL._QL70_FMwebp_.jpg");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
@@ -54,7 +54,7 @@ select {
 .pic2 {
 	background-image: url("https://doagahehoc242.cloudfront.net/uploads/posts/827/de1565c6_7-tarsila-do-amaral.jpg");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
@@ -66,7 +66,7 @@ select {
 .pic3 {
 	background-image: url("https://image.posterlounge.com/img/products/630000/628493/628493_poster_l.jpg");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
@@ -78,7 +78,7 @@ select {
 .pic4 {
 	background-image: url("https://brainworldmagazine.com/wp-content/uploads/2016/11/AbstractPainting.jpg");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
@@ -90,7 +90,7 @@ select {
 .pic5 {
 	background-image: url("https://artviewer.org/wp-content/uploads/2020/06/Tim-Stoner-at-Modern-Art-5.jpg");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
@@ -102,7 +102,7 @@ select {
 .pic6 {
 	background-image: url("https://media.timeout.com/images/105397752/1024/576/image.jpg");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
@@ -114,7 +114,7 @@ select {
 .pic7 {
 	background-image: url("https://www.banglabazaar.in/wp-content/uploads/2018/12/33-1.png");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
@@ -126,7 +126,7 @@ select {
 .pic8 {
 	background-image: url("https://media.nga.gov/iiif/55548bf4-ab9d-4195-9f84-cc57061f6692__640/full/!740,560/0/default.jpg");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
@@ -138,7 +138,7 @@ select {
 .pic9 {
 	background-image: url("https://5.imimg.com/data5/JR/CZ/YZ/ANDROID-49985795/1559486907576-jpg-500x500.jpg");
 	width: 80%;
-	min-width: 200px;
+	min-width: 80px;
 	min-height: 180px;
 	overflow: hidden;
 	height: 70%;
