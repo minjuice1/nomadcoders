@@ -3,97 +3,146 @@ body {
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	width: 98%;
 	height: 100vh;
+	font-weight: bold;
 }
 
-.grid {
+.nav {
 	display: grid;
 	grid-template-columns: repeat(5, minmax(auto, auto));
 }
 
 select {
-	/* grid-template-columns: repeat(4, minmax(auto, auto)); */
 	flex: auto;
 	height: 30px;
 	background-color: #ffffff;
-	border: 1.5px solid black;
+	border: 3px solid black;
+	border-bottom: none;
 }
 
 .box {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(33.3%, 33.3%));
-	grid-template-rows: repeat(3, minmax(auto, auto));
+	grid-template-columns: repeat(3, minmax(100px, auto));
+	grid-template-rows: repeat(3, minmax(auto, 300px));
 }
 
 .info {
-	height: 250px;
-	border: 1.5px solid black;
+	border: 3px solid black;
 }
 
 .space {
-	margin: 15px;
+	margin: 10px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.info > div:nth-child(1) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
-	margin: auto;
+.space > a {
+	color: black;
 }
 
-.info > div:nth-child(2) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+.pic1 {
+	background-image: url("https://images-na.ssl-images-amazon.com/images/I/31MvVY7Z0mL._QL70_FMwebp_.jpg");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
 	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.info > div:nth-child(3) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+.pic2 {
+	background-image: url("https://doagahehoc242.cloudfront.net/uploads/posts/827/de1565c6_7-tarsila-do-amaral.jpg");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
 	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.info > div:nth-child(4) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+.pic3 {
+	background-image: url("https://image.posterlounge.com/img/products/630000/628493/628493_poster_l.jpg");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
 	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.info > div:nth-child(5) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+.pic4 {
+	background-image: url("https://brainworldmagazine.com/wp-content/uploads/2016/11/AbstractPainting.jpg");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
 	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.info > div:nth-child(6) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+.pic5 {
+	background-image: url("https://artviewer.org/wp-content/uploads/2020/06/Tim-Stoner-at-Modern-Art-5.jpg");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
 	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.info > div:nth-child(7) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+.pic6 {
+	background-image: url("https://media.timeout.com/images/105397752/1024/576/image.jpg");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
 	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.info > div:nth-child(8) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+.pic7 {
+	background-image: url("https://www.banglabazaar.in/wp-content/uploads/2018/12/33-1.png");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
 	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.info > div:nth-child(9) {
-	height: 18vh;
-	width: 25vw;
-	background-image: url("https://i.pinimg.com/564x/c1/b7/a5/c1b7a522ac5dae0f3ef7fd14221e23cb.jpg");
+.pic8 {
+	background-image: url("https://media.nga.gov/iiif/55548bf4-ab9d-4195-9f84-cc57061f6692__640/full/!740,560/0/default.jpg");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
 	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.pic9 {
+	background-image: url("https://5.imimg.com/data5/JR/CZ/YZ/ANDROID-49985795/1559486907576-jpg-500x500.jpg");
+	width: 80%;
+	min-width: 200px;
+	min-height: 180px;
+	overflow: hidden;
+	height: 70%;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
