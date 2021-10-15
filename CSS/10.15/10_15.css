@@ -3,4 +3,168 @@ body {
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	width: 98%;
 	height: 100vh;
+	display: flex;
+	border: 3px solid black;
+}
+
+.office {
+	border-right: 3px solid black;
+	overflow-x: hidden;
+	width: 25%;
+}
+
+.office > div:first-child {
+	padding: 10px;
+}
+
+.office > h2 {
+	padding: 10px 10px 0 10px;
+}
+
+.office > button {
+	background-color: white;
+	width: 100%;
+	text-align: left;
+	height: 30px;
+	border: 1px solid black;
+	border-right: none;
+	border-left: none;
+}
+
+.footer {
+	margin-top: 100px;
+}
+
+.footer > div {
+	padding: 20px 10px 15px 10px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 9, minmax(100px, auto);
+	grid-template-rows: 10, minmax(100px, auto);
+}
+
+.grid > div:nth-child(1) {
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	width: 25vw;
+	grid-column: 1/4;
+	grid-row: 1/9;
+	padding: 10px;
+	font-size: 0.9rem;
+}
+
+.grid > div:nth-child(2) {
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	width: 25vw;
+	grid-column: 4/7;
+	grid-row: 1/9;
+	background-image: url("https://minutes.co/wp-content/uploads/2019/10/virtual-office.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.grid > div:nth-child(3) {
+	border-bottom: 3px solid black;
+	width: 25vw;
+	background-image: url("https://media.newyorker.com/photos/5fc92b5fc7dac80adfffd369/master/w_1920,c_limit/201214_r37548_rd.jpg");
+	grid-column: 7/10;
+	grid-row: 1/5;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(4) {
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	background-image: url("https://prodmediacdn.blob.core.windows.net/media/2020/06/landscape_vp4_630x449_0000s_0007_GettyImages-514410153.jpg.jpg");
+	grid-column: 7/9;
+	grid-row: 5/7;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(5) {
+	border-bottom: 3px solid black;
+	background-image: url("https://www.cnet.com/a/img/3l0pi8UGY1EwaX_MSMtGkOZyDeE=/1092x614/2017/12/06/8e69faf0-18b4-43d4-bea7-3e035d4517d3/office365-worker-1600.jpg");
+	grid-column: 9/10;
+	grid-row: 5/6;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(6) {
+	border-bottom: 3px solid black;
+	background-image: url("https://www.telkomsel.com/sites/default/files/asset/fullhtml/img/gallery/telkomsel/255385441.jpg");
+	grid-column: 9/10;
+	grid-row: 6/7;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(7) {
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	background-image: url("https://www.dmv.ca.gov/portal/wp-content/themes/dmv/dist/images/illustrations/teen_desk.svg");
+	grid-column: 7/8;
+	grid-row: 7/9;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(8) {
+	border-bottom: 3px solid black;
+	background-image: url("https://www.ionos.com/startupguide/fileadmin/StartupGuide/Teaser/office-t.jpg");
+	grid-column: 8/10;
+	grid-row: 7/9;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(9) {
+	border-right: 3px solid black;
+	grid-column: 1/4;
+	grid-row: 9/11;
+	padding: 10px;
+}
+
+.grid > div:nth-child(10) {
+	width: 8.3vw;
+	border-right: 3px solid black;
+	grid-column: 4/5;
+	grid-row: 9/11;
+	background-image: url("https://www.zohowebstatic.com/sites/default/files/office/zoho-office-suite-header.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(11) {
+	width: 8.3vw;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	grid-column: 5/6;
+	grid-row: 9/10;
+	background-image: url("https://www.microsoft.com/en-us/microsoft-365/blog/uploads/prod/sites/2/2021/09/SEC20_Security_018-1200x600.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(12) {
+	width: 8.3vw;
+	border-right: 3px solid black;
+	grid-column: 5/6;
+	grid-row: 10/11;
+	background-image: url("https://www.thelocal.de/wp-content/uploads/2021/06/239044026-2-646x431.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.grid > div:nth-child(13) {
+	grid-column: 6/10;
+	grid-row: 9/11;
+	background-image: url("https://acutec.b-cdn.net/wp-content/uploads/2019/05/difference-microsoft-365-office-365-e1601991663664.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
