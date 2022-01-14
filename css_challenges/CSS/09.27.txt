@@ -1,0 +1,44 @@
+1. Before flexbox what did we use to put boxes next to each other?
+
+display:inline-block
+
+*2. What should I do to move a group of boxes using flexbox?
+
+I should put them inside of a "flex container"
+
+3. What CSS property do I use to make a flex container?
+
+display:flex
+
+*4. When we are using flexbox who do we talk to?
+
+The flex container
+
+5. What's the default direction of a flex container?
+
+row
+
+6. `justify-content` moves the elements on which axis?
+
+main-axis
+
+7. `align-items` moves the elements on which axis?
+
+cross-axis
+
+8. When `flex-direction:row`
+
+main-axis is horizontal & align-items is vertical
+
+9. When `flex-direction:column`
+
+main-axis is vertical & align-items is horizontal
+
+
+10. `space-between` is a vale for which property?
+
+justify-content
+
+11. `center` is a vale for which property?
+
+justify-content & align-items

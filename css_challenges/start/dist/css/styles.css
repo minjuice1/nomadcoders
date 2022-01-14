@@ -1,0 +1,14 @@
+h1 {
+	color: red;
+}
+@media screen and (min-width: minIphone) and (max-width: maxIphone) {
+	h1 {
+		color: #ff0;
+		font-size: 100px;
+	}
+}
+@media screen and (min-width: minTablet) and (max-width: maxTablet) {
+	h1 {
+		color: green;
+	}
+}
