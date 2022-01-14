@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+		<title>09.27</title>
+	</head>
+	<link rel="stylesheet" href="style.css" />
+	<body>
+			<h1>Random Number Game</h1>
+			<form id="form">
+				<div>Generate a number between 0 and<input type="number" id="select-num" min="0"></input></div></body>
+			<div id="guess">Guess the number:
+				<input required type="number" id="guess-num" min="0" value></input>
+   	   <input type="submit" id="play-btn" value="play!"/>
+    	</div>
+			<div id="match" class="hidden">
+				<span id="play_span" ></span><br>
+				<span id="result_span" ></span>
+			</div>
+			</form>
+		<script src="09_27.js"></script>
+	</body>
+</html>
